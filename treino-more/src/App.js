@@ -1,10 +1,6 @@
-
 import './App.css';
-
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
-import Frase from './components/Frase';
-import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
 
 function App() {
   
@@ -12,18 +8,11 @@ function App() {
   return (
     <div className="App">
      <h1>Olá React!</h1>
-     <Frase/>
-     <Frase/>     
-     <SayMyName nome="Diego"/>
+     
+     <Evento numero='1'/>
+     <Evento numero='2'/>
 
-     <Pessoa
-     nome="Diego"
-     idade="21"
-     prof="Programador"
-     foto="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2A96iiljPO_sadcV03xYu8Xsz7Vg6U3APG2T8ClOcA&s"
-     />
-
-     <List/>
+     <Form/>
     </div>
   );
 }
